@@ -9,3 +9,18 @@ https://carlosazaustre.es/react-vite
 --------------------------------------------
 
 npm create vite@latest online-store
+seleccione
+    react
+    javascript
+    cd online-store
+    npm install
+    npm run dev
+
+npm install -D tailwindcss postcss autoprefixer
+;-->pegar 3 lineas en index.css --> 
+    @tailwind base;
+    @tailwind components;
+    @tailwind utilities;
+    
+npx tailwindcss init -p
+npm install react-icons
