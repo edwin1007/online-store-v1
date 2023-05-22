@@ -1,0 +1,11 @@
+--------------------------------------------
+
+se va a crear una app tienda en linea con react.
+pruebas para proyecto de desarrollo de software 2.
+
+https://www.youtube.com/watch?v=jGBE75m6YOE
+https://carlosazaustre.es/react-vite
+
+--------------------------------------------
+
+npm create vite@latest online-store
