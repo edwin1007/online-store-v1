@@ -1,31 +1,38 @@
 
-import { RiMenu3Fill, RiUser3Line, RiAddLine, RiPieChartLine } from "react-icons/ri";
+import { useState } from "react";
+import { RiMenu3Fill, RiUser3Line, RiAddLine, RiPieChartLine, RiCloseLine } from "react-icons/ri";
 import Sidebar from "./components/shared/Sidebar";
 
 
 function App() {
+  const [showMenu, setShowMenu] = useState(false); 
+  const [showOrder, setShowOrder] = useState(false);
+  
+  const toggleMenu = () =>{
+    setShowMenu(!showMenu);
+  }
 
   return (
     <div className="bg-[#262837] w-full min-h-screen">
-      <Sidebar />
+      <Sidebar showMenu={showMenu} />
       {/** Menu movil */}
 
       <nav className="bg-[#1F1D2B] lg:hidden fixed w-full bottom-0 left-0 text-3xl text-gray-400 py-4 px-8 
                       flex items-center justify-between rounded-tl-xl rounded-tr-xl">
-        <button>
+        <button className="p-2">
           <RiUser3Line />
         </button>
 
-        <button>
+        <button className="p-2">
           <RiAddLine />
         </button>
 
-        <button>
+        <button className="p-2">
           <RiPieChartLine /> 
         </button>
 
-        <button>
-          <RiMenu3Fill className="text-white"/>
+        <button onClick={toggleMenu} className="text-white p-2">
+          {showMenu ? <RiCloseLine/> : <RiMenu3Fill/> }
         </button>
 
       </nav>
