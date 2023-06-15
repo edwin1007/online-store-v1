@@ -39,9 +39,9 @@ function App() {
 
       </nav>
 
-      <main className="lg:pl-28 grid grid-cols-1 lg:grid-cols-8 p-4 pb-20">
+      <main className="lg:pl-32 grid grid-cols-1 lg:grid-cols-8 p-4 pb-20">
         {/**panel central */}
-        <div className="lg:col-span-6 ">
+        <div className="lg:col-span-6 md:p-8 ">
           {/**Header */}
           <header>
             {/**title and search */} 
@@ -85,9 +85,12 @@ function App() {
             </button>
           </div>
 
-          {/**content*/}
-          <div className="p-8 grid grid-cols-1 md:grid-cols-2 gap-16">
+          {/**content: vista para escritorio*/}
+
+          <div className="p-8 grid grid-cols-1 md:grid-cols-2  lg:grid-cols-3 gap-16">
+
             {/**carta o menu de comidas 1*/}
+
             <div className="bg-[#1F1D2B] p-8 rounded-xl flex flex-col items-center gap-2 
                             text-center text-gray-300">
               <img src="comida.png" 
